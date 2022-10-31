@@ -1,0 +1,48 @@
+.progressBarAnimated{
+  margin-top: 8%;
+}
+.progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 10px;
+    width: 100%;
+  }
+
+  .progress-value {
+      animation: load 5s normal forwards;
+      box-shadow: 0 10px 40px -10px #fff;
+      border-radius: 100px;
+      background: radial-gradient(circle at 0% -25%,#FF8947 0%,#FF8354 0,#DA2C94 42%,#3E13A5 110%);
+      height: 30px;
+      width: 0;
+    }
+
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 70%; }
+  }
+
+h1{
+    color: white;
+  }
+
+.school_images{
+  display: flex;
+  gap: 17%;
+} 
+
+.imagesize{
+  width:10%;
+  height: auto;
+  transition: transform .2s;
+}
+
+.imagesize:hover{
+  transform: scale(1.12);
+}
+

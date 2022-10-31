@@ -6,6 +6,13 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&amp">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="./assets/js/onscrollProgress.js"></script>
+  
 </head>
 <body style="background-color: black">
   <app-root></app-root>
@@ -13,26 +20,5 @@
 </html> 
 
 <script>
-  window.onload = function(){
-    var element = document.getElementById('box');
-    var elementHeight = element.clientHeight;
-    document.addEventListener('scroll', animate);
-    function inView() {
-      var windowHeight = window.innerHeight;
-      var scrollY = window.scrollY || window.pageYOffset;
-      var scrollPosition = scrollY + windowHeight;
-      var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
-      if (scrollPosition > elementPosition) {
-        return true;
-      }
-        return false;
-      }
-      function animate() {
-        if (inView()) {
-        element.classList.add('progress-value');
-        }
-
-}
-}
 </script>
 

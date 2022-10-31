@@ -28,7 +28,10 @@
               "node_modules/swiper/swiper-bundle.css",
               "node_modules/aos/dist/aos.css"
             ],
-            "scripts": [ ]
+            "scripts": [  
+              "node_modules/aos/dist/aos.js"
+
+          ]
           },
           "configurations": {
             "production": {
@@ -97,8 +100,6 @@
               "node_modules/aos/dist/aos.css"
             ],
             "scripts": [
-              "node_modules/aos/dist/aos.js"
-                    
             ]
           }
         }

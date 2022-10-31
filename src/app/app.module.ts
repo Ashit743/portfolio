@@ -7,6 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SwiperModule } from 'swiper/angular';
 import { EduExpComponent } from './edu-exp/edu-exp.component';
+import { SkillsComponent } from './skills/skills.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 
 @NgModule({
@@ -15,6 +18,9 @@ import { EduExpComponent } from './edu-exp/edu-exp.component';
     NavbarComponent,
     ProjectsComponent,
     EduExpComponent,
+    SkillsComponent,
+    WelcomeComponent,
+    ExperienceComponent,
 
   ],
   imports: [

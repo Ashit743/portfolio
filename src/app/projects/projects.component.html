@@ -1,0 +1,18 @@
+<div class="d-flex justify-content-center">
+<h1>Projects</h1>
+</div>
+
+<div class="space d-flex justify-content-center">
+  <swiper [navigation]="true" class="mySwiper box" [loop] = "true"  [autoplay]="{delay:3000,disableOnInteraction:true}" >
+    <ng-template swiperSlide *ngFor="let elem of proj_name,index as i">
+      <div>
+        <img src="{{image[i]}}" alt="">
+      <div>
+        <h1 class="name_of_proj">{{proj_name[i]}}</h1>
+      </div>
+      </div>
+    </ng-template>
+  </swiper>
+  
+</div>
+

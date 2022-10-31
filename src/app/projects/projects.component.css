@@ -1,0 +1,19 @@
+.name_of_proj{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+
+}
+
+.swiper{
+    border-radius: 7%;
+    border-style: solid;
+    color: rgb(0, 0, 8);
+}
+
+.space{
+    margin-top: 8%;
+}
