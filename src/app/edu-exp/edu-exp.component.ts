@@ -11,10 +11,18 @@ declare function working():any
 })
 export class EduExpComponent implements OnInit {
 
+  SchoolDescription = 
+  ["Completed my Grade X State,with Math,Science,Social Studies, English, Hindi and Kannada in Sai Niketan",
+  "",
+  ""]
   Schoolimages = ["../../assets/images/school.png","../../assets/images/smallSchool.png","../../assets/images/university.png"]
   constructor() {   }
 
   ngOnInit(){
+
+
+    
+
     working()
     AOS.init();
     

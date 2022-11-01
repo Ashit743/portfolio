@@ -10,6 +10,7 @@ import { EduExpComponent } from './edu-exp/edu-exp.component';
 import { SkillsComponent } from './skills/skills.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { ExperienceComponent } from './experience/experience.component';
     SkillsComponent,
     WelcomeComponent,
     ExperienceComponent,
+    FooterComponent,
 
   ],
   imports: [
