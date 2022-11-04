@@ -22,6 +22,9 @@ export class ProjectsComponent implements OnInit {
           "https://media.istockphoto.com/vectors/hands-of-robot-and-human-touching-illustration-vector-vector-id1051821596?k=20&m=1051821596&s=612x612&w=0&h=Y6bFt-fnW3uozod2fpXOz1Fext7ovu8bYnLryZX0nFU=",
           "https://cdn11.bigcommerce.com/s-x49po/images/stencil/original/products/80791/128163/1643451725742_IMG-3128__1___03316.1643795465.jpg?c=2",         
           ]
+  routerRoutes = [
+    "proj1","proj2","proj3","proj4","proj5"
+  ];
   
  
   constructor(private cd:ChangeDetectorRef,
