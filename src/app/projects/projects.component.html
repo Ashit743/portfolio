@@ -7,12 +7,15 @@
     <ng-template swiperSlide *ngFor="let elem of proj_name,index as i">
       <div>
         <img src="{{image[i]}}" alt="">
-      <div>
-        <h1 class="name_of_proj">{{proj_name[i]}}</h1>
-      </div>
+      <a routerLink="/proj1">
+        <div>
+          <h1 class="name_of_proj">{{proj_name[i]}}</h1>
+        </div>
+      </a>
       </div>
     </ng-template>
   </swiper>
   
 </div>
+
 

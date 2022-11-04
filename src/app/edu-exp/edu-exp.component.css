@@ -131,7 +131,24 @@ h1{
 }
  
 
+@media screen and (max-width: 768px){
+  .imagesize{
+    width:50%;
+    height: auto;
+    transition: transform .2s;
+  }
+  
+}
 
+
+@media screen and (max-width: 576px){
+  .imagesize{
+    width:60%;
+    height: auto;
+    transition: transform .2s;
+  }
+  
+}
 
 
 
