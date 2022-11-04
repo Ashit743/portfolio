@@ -17,7 +17,7 @@ function working(){
         var scrollPosition = scrollY + windowHeight;
         var elementPosition = elem.getBoundingClientRect().top + scrollY + elementH;
         if (scrollPosition > elementPosition) {
-          console.log(scrollPosition,elementPosition)
+          // console.log(scrollPosition,elementPosition)
           return true;
         }
         return false;
