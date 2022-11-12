@@ -1,7 +1,14 @@
 h1{
-    color: aliceblue
-}
 
+  color: #f0c6f1;
+  background-image: -webkit-linear-gradient(0deg, #f0c6f1 0%, #11bfa9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+
+}
+ 
 
 body {
     font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;

@@ -1,8 +1,32 @@
 .nav-color{
     background: radial-gradient(circle at 0% -25%,#FF8947 0%,#FF8354 0,#DA2C94 42%,#3E13A5 110%);
+
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+
 }
+
+.the-blur {
+    position: fixed;
+    top:0;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,.4);
+    z-index:999;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+}
+
 
 h3{
     color: aliceblue;
 }
+
+
 

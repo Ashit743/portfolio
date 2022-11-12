@@ -8,6 +8,7 @@ import { Proj4Component } from './projects/proj4/proj4.component';
 import { Proj5Component } from './projects/proj5/proj5.component';
 import { ProjectListComponent } from './projects/project-list/project-list.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,9 @@ const routes: Routes = [
   {
     path:'projects/proj5',component:Proj5Component
 
+  },
+  {
+    path:'contactme',component:ContactMeComponent
   }
 
 ];

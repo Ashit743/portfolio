@@ -16,6 +16,7 @@ import { Proj3Component } from './projects/proj3/proj3.component';
 import { Proj4Component } from './projects/proj4/proj4.component';
 import { Proj5Component } from './projects/proj5/proj5.component';
 import { ProjectListComponent } from './projects/project-list/project-list.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ProjectListComponent } from './projects/project-list/project-list.compo
     Proj4Component,
     Proj5Component,
     ProjectListComponent,
+    ContactMeComponent,
 
   ],
   imports: [

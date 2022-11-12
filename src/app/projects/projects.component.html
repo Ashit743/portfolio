@@ -1,11 +1,11 @@
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center gap">
 <h1>Projects</h1>
 </div>
 
-<div class="space d-flex justify-content-center">
-  <swiper [navigation]="true" class="mySwiper box" [loop] = "true"  [autoplay]="{delay:3000,disableOnInteraction:true}" >
+<div class="space d-flex justify-content-center ">
+  <swiper [navigation]="true" class="mySwiper box fit" [loop] = "true"  [autoplay]="{delay:3000,disableOnInteraction:true}" >
     <ng-template swiperSlide *ngFor="let elem of proj_name,index as i">
-      <div>
+      <div class="">
         <img src="{{image[i]}}" alt="">
       <a routerLink="{{'projects'+'/'+routerRoutes[i]}}">
         <div>
