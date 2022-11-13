@@ -14,7 +14,7 @@
   }
 
   .progress-value {
-      animation: load 5s normal forwards;
+      animation: load 3s normal forwards;
       box-shadow: 0 10px 40px -10px #fff;
       border-radius: 100px;
       background: radial-gradient(circle at 0% -25%,#FF8947 0%,#FF8354 0,#DA2C94 42%,#3E13A5 110%);
@@ -146,6 +146,11 @@ h1{
     height: auto;
     transition: transform .2s;
   }
+
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 80%; }
+  }
   
 }
 
@@ -155,6 +160,13 @@ h1{
     width:60%;
     height: auto;
     transition: transform .2s;
+    
+  }
+
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 80%; }
   }
   
 }
