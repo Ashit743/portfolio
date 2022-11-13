@@ -1,5 +1,7 @@
 <div class="d-flex justify-content-center gap">
-<h1>Projects</h1>
+<a routerLink="projects">
+  <h1>Projects</h1>
+</a>
 </div>
 
 <div class="space d-flex justify-content-center ">
@@ -9,7 +11,7 @@
         <img src="{{image[i]}}" alt="">
       <a routerLink="{{'projects'+'/'+routerRoutes[i]}}">
         <div>
-          <h1 class="name_of_proj">{{proj_name[i]}}</h1>
+          <h2 class="name_of_proj">{{proj_name[i]}}</h2>
         </div>
       </a>
       </div>

@@ -1,29 +1,95 @@
-p{
-    color: aliceblue;
+
+
+
+.skills {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-.progress {
-    background: rgba(255,255,255,0.1);
-    justify-content: flex-start;
-    border-radius: 100px;
-    align-items: center;
-    position: relative;
-    padding: 0 5px;
-    display: flex;
-    height: 10px;
-    width: 100%;
-  }
+.skills-bar {
+  padding: 25px 30px;
+}
 
-  .progress-value {
-      animation: load 3s normal forwards;
-      box-shadow: 0 10px 40px -10px #fff;
-      border-radius: 100px;
-      background: radial-gradient(circle at 0% -25%,#FF8947 0%,#FF8354 0,#DA2C94 42%,#3E13A5 110%);
-      height: 30px;
-      width: 0;
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: #25b79f;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  text-transform:   uppercase;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 80%;
+}
+.progress-line .css {
+  width: 70%;
+}
+.progress-line .bootstrap {
+  width: 82%;
+}
+.progress-line .javascript {
+  width: 62%;
+}
+.progress-line .c {
+  width: 60%;
+}
+
+
+h1{
+  
+  color: #f0c6f1;
+  background-image: -webkit-linear-gradient(0deg, #f0c6f1 0%, #11bfa9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+/* ////........Media Query........//// */
+
+@media (max-width: 700px) {
+    .skills{
+        width: 80%;
     }
 
-  @keyframes load {
-    0% { width: 0; }
-    100% { width: 70%; }
-  }
+    .skills-bar .bar .progress-line{
+        width: 100%;
+    }
+}      

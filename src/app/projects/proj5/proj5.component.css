@@ -1,5 +1,5 @@
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu";
   box-sizing: border-box;
   min-height: 100vh;
   display: grid;
@@ -9,7 +9,7 @@ body {
   line-height: 1.25;
   margin: 0;
   background-image: linear-gradient(to left, #b3ffd5, #b0efcc, #acdec3, #a9ceb9, #a5beb0);
-  color: white;
+  color: black;
   padding-top: 10%;
 }
 
@@ -17,10 +17,13 @@ header,
 main,
 footer {
   max-width: 60vw;
+
 }
 
+
+
 a,p {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -29,11 +32,11 @@ a:hover {
 }
 
 a:visited {
-  color: white;
+  color: black;
 }
 
 pre {
-  border-left: 2px solid white;
+  border-left: 2px solid black;
   font-family: "Ubuntu Mono", monospace;
 }
 
@@ -52,4 +55,18 @@ footer {
   color: grey;
   margin-top: 40px;
   font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.image_reduce{
+
+  border: 3px solid black;  
+  border-radius: 15px;
+}
+
+
+.image_px{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }

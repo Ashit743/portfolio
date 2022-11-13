@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+declare function working():any
+
 
 @Component({
   selector: 'app-welcome',
@@ -10,6 +12,7 @@ export class WelcomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    working()
   }
 
 }

@@ -17,6 +17,7 @@ import { Proj4Component } from './projects/proj4/proj4.component';
 import { Proj5Component } from './projects/proj5/proj5.component';
 import { ProjectListComponent } from './projects/project-list/project-list.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     Proj5Component,
     ProjectListComponent,
     ContactMeComponent,
+    ScrollToTopComponent,
 
   ],
   imports: [

@@ -37,3 +37,9 @@ h1 {
     -webkit-text-fill-color: transparent;
   
   }
+
+
+  a{
+    text-decoration:none ;
+    color: inherit;
+  }

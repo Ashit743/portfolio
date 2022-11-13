@@ -9,6 +9,11 @@ function working(){
     var elementHeight2 = w2.clientHeight;
     var elementHeight3 = w3.clientHeight;
 
+    const showOnPx = 100;
+    const backToTopButton = document.querySelector(".back-to-top");
+    const scrollContainer = () => {
+      return document.documentElement || document.body;
+    };
     document.addEventListener('scroll', animate);
 
     function inViewWork(elementH,elem) {
@@ -51,8 +56,28 @@ function working(){
         }
 
         }
+        if (scrollContainer().scrollTop > showOnPx) {
+          backToTopButton.classList.remove("hidden")
+        } else {
+          backToTopButton.classList.add("hidden")
+        }
+        const goToTop = () => {
+          document.body.scrollIntoView({
+            behavior:"smooth",
+          });
+        };
+        backToTopButton.addEventListener("click", goToTop)
+    
+
         
       }  
+
+
+
+
+
+
+      
       
 
 

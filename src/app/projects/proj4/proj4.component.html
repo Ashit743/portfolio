@@ -6,28 +6,73 @@
   
   <body>
     <header>
-      <h1><a href="#">My blog</a></h1>
+      <h1><a href="https://photos.app.goo.gl/ohXcByLBuqpraE7V8" target="_blank">Check it out!</a></h1>
     </header>
     <main>
       <article>
-        <h2>Article 4 title</h2>
-        <p class="date">20.12.2022</p>
-        <p>Text paragraph 1 Text paragraph 1 Text paragraph 1 Text paragraph 1 Text paragraph 1 Text paragraph 1 Text paragraph 1 Text paragraph 1 Text paragraph 1 Text paragraph 1 Text paragraph 1 </p>
+        <h2>Maze Solver</h2>
+        <p class="date">29.02.2020</p>
+        <p>A automatic robot that can find it's way out by using Left hand rule, In short, the Left-Hand Rule. Imagine you are in a maze </p>
+
+          <ul>
+            <li>
+              <p>Place your left hand on the wall.</p>
+            </li>
+            <li>
+              <p>Begin walking forward</p>
+            </li>
+            <li>
+              <p>At every intersection, and throughout the maze, keep your left hand touching the wall on your left.</p>
+            </li>
+            <li>
+              <p>Eventually, you will reach the end of the maze. You will probably not go the shortest and most direct way, but you will get there</p>
+            </li>
+          </ul>
   
         <pre>
-          code piece if i(f) = s;
-          do do do while
-            aaaaaa
-          ok</pre>
-        <p>Text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 </p>
-        <p>Text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 </p>
-        <p>Text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 </p>
-        <p>Text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 </p>
-        <p>Text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 </p>
-        <p>Text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 text paragraph 2 </p>
+          void mazeSolve(void)
+          
+              while (!status)
+              
+                  readLFSsensors();  
+                  switch (mode)
+                    
+                    case NO_LINE:  
+                      motorStop();
+                      goAndTurn (LEFT, 180);
+                      recIntersection('B');
+                      break;
+                    
+                    case CONT_LINE: 
+                      runExtraInch();
+                      readLFSsensors();
+                      if (mode != CONT_LINE) goAndTurn (LEFT, 90); recIntersection('L');
+                      else mazeEnd(); 
+                      break;
+                      
+                   case RIGHT_TURN: 
+                      runExtraInch();
+                      readLFSsensors();
+                      if (mode == NO_LINE) goAndTurn (RIGHT, 90); recIntersection('R');
+                      else recIntersection('S');
+                      break;   
+                      
+                   case LEFT_TURN: 
+                      goAndTurn (LEFT, 90); 
+                      recIntersection('L');
+                      break;   
+                   
+                   case FOLLOWING_LINE: 
+                      followingLine();
+                      break;      
+                  
+                
+          </pre>
+        <p>The code was developed using Arduino IDE, and written in embedded C</p>
+ 
       </article>
     </main>
     <footer>
-      kotenka 2022
+      Namaskara &hearts;
     </footer>
   </body>

@@ -23,7 +23,7 @@ export class ProjectsComponent implements OnInit {
           "https://cdn11.bigcommerce.com/s-x49po/images/stencil/original/products/80791/128163/1643451725742_IMG-3128__1___03316.1643795465.jpg?c=2",         
           ]
   routerRoutes = [
-    "proj1","proj2","proj3","proj4","proj5"
+    "proj4","proj1","proj2","proj5","proj3"
   ];
   
  
