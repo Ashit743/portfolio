@@ -89,11 +89,11 @@ h1{
         width: 100%;
     }
 
-    .skills-bar{
-      width: 100%;
-    }
-
     .skills-bar .bar .progress-line{
         width: 100%;
+    }
+
+    .skills-bar{
+      width: 100%;
     }
 }      
