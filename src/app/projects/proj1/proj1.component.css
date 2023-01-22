@@ -54,3 +54,7 @@ body {
     font-family: "Ubuntu Condensed", sans-serif;
   }
   
+
+  @media screen and (max-width: 320px){
+
+  }
