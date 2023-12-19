@@ -25,3 +25,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+https://persistentsystems-my.sharepoint.com/personal/pooja_pali_persistent_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpooja%5Fpali%5Fpersistent%5Fcom%2FDocuments%2FGenAI%20for%20Practitioner%2FGenAI%20for%20Practitioners%20%2D%20Hands%2Don%20project%20submission&ga=
