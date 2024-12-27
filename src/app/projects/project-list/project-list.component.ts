@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-project-list',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectListComponent implements OnInit {
 
-  constructor() { }
+  projects: any = []
+  constructor(private http: HttpClient) {
+
+  }
 
   ngOnInit(): void {
+    this.http.get<any[]>('../../../assets/projects.json').subscribe({
+      next: (response) => {
+        this.projects = response;
+        console.log(this.projects); // Logs the array of JSON objects
+      },
+      error: (err) => {
+        console.error('Error fetching JSON file:', err);
+      }
+    });
   }
 
 }

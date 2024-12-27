@@ -1,0 +1,43 @@
+[
+    {
+      "date": "Nov 11, 2021",
+      "name": "startup Base",
+      "description" :  "stories for entreprenuers!",
+      "progress" : "100%",
+      "router_redirect": "/projects/proj1",
+      "color": "#fee4cb"
+    },
+    {
+      "date": "Dec 31, 2019",
+      "name": "RC Aircraft",
+      "description" :  "SAE Aerodesigning",
+      "progress" : "100%",
+      "router_redirect": "/projects/proj2",
+      "color":"#ffdab1"
+    },
+    {
+      "date": "December 10, 2020",
+      "name": "BlinkPy",
+      "description" :  "eye strain management",
+      "progress" : "100%",
+      "router_redirect": "/projects/proj3",
+      "color":"#FFE4F3"
+    },
+    {
+      "date": "March 9, 2021",
+      "name": "Maze Solver",
+      "description" :  "Automatic maze solver",
+      "progress" : "100%",
+      "router_redirect": "/projects/proj4",
+      "color":"#A7A2A9"
+    },
+    {
+      "date": "Dec 10, 2021",
+      "name": "HCI",
+      "description" :  "Human Computer Interaction",
+      "progress" : "100%",
+      "router_redirect": "/projects/proj4",
+      "color":"#ECF0F1"
+    }
+
+]
