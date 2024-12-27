@@ -18,6 +18,7 @@ import { Proj5Component } from './projects/proj5/proj5.component';
 import { ProjectListComponent } from './projects/project-list/project-list.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,8 +43,9 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SwiperModule
-  ],
+    SwiperModule,
+    HttpClientModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
